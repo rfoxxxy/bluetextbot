@@ -6,7 +6,7 @@ LOGGER = logging.getLogger(__name__)
 
 sys.path.append('./')
 
-from bot_template.utils import td_format  # pylint: disable=import-error
+from bluetextbot.utils import td_format  # pylint: disable=import-error
 
 
 class TestTimeDeltaFormat():

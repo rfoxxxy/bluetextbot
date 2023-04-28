@@ -8,8 +8,8 @@ LOGGER = logging.getLogger(__name__)
 
 sys.path.append('./')
 
-from bot_template.core import BotCore  # pylint: disable=import-error
-from bot_template.core.task_manager import \
+from bluetextbot.core import BotCore  # pylint: disable=import-error
+from bluetextbot.core.task_manager import \
     BaseCoreTask  # pylint: disable=import-error
 
 

@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "telegram-bot-template"
+name = "bluetextbot"
 version = "2.0.0"
-description = "An ultimate, convenient and fast way to start developing a bot in a matter of seconds without copying code from other projects."
+description = ""
 authors = ["rf0x3d <yarekfrolov@gmail.com>"]
 
 [tool.poetry.dependencies]
@@ -28,7 +28,7 @@ apscheduler = "^3.9.1.post1"
 requests = "^2.28.2"
 orjson = "^3.8.6"
 alembic = "^1.10.2"
-psycopg = {extras = ["binary", "pool"], version = "^3.1.8"}
+psycopg = { extras = ["binary", "pool"], version = "^3.1.8" }
 
 [tool.poetry.group.dev.dependencies]
 yapf = "^0.31.0"

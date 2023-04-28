@@ -7,7 +7,7 @@ os.environ["DISABLE_UVLOOP"] = "True"
 
 sys.path.append('./')
 
-from bot_template.core.config_manager import (  # pylint: disable=import-error
+from bluetextbot.core.config_manager import (  # pylint: disable=import-error
     ConfigManager, IniProvider, TomlProvider)
 
 

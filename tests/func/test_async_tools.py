@@ -5,7 +5,7 @@ import pytest
 
 sys.path.append('./')
 
-from bot_template.utils import run_async  # pylint: disable=import-error
+from bluetextbot.utils import run_async  # pylint: disable=import-error
 
 
 @pytest.mark.asyncio

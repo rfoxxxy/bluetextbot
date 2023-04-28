@@ -3,9 +3,9 @@ from logging.config import fileConfig
 from sqlalchemy import create_engine, engine
 
 from alembic import context
-from bot_template import db
-from bot_template.core.config_manager import ConfigManager
-from bot_template.database.models import *
+from bluetextbot import db
+from bluetextbot.core.config_manager import ConfigManager
+from bluetextbot.database.models import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

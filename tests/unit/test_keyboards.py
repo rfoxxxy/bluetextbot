@@ -8,7 +8,7 @@ sys.path.append('./')
 from aiogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
                            KeyboardButton, ReplyKeyboardMarkup)
 
-from bot_template import keyboards  # pylint: disable=import-error
+from bluetextbot import keyboards  # pylint: disable=import-error
 
 
 class TestKeyboards:
