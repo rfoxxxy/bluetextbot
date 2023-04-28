@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "telegram-bot-template"
+version = "2.0.0"
+description = "An ultimate, convenient and fast way to start developing a bot in a matter of seconds without copying code from other projects."
+authors = ["rf0x3d <yarekfrolov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^2.23.1"
+aiohttp = { extras = ["speedups"], version = "^3.8.3" }
+charset-normalizer = ">=2.0,<3.0"
+loguru = "^0.6.0"
+cachetools = "^4.2.4"
+aioredis = "^2.0.0"
+uvloop = "^0.16.0"
+aiodns = "^3.0.0"
+SQLAlchemy = "^2.0.0"
+asyncpg = "^0.25.0"
+greenlet = "^1.1.2"
+aiosqlite = "^0.17.0"
+sentry-sdk = "^1.5.12"
+psutil = "^5.9.4"
+toml = "^0.10.2"
+nest-asyncio = "^1.5.6"
+redis = "^4.4.1"
+validators = "^0.20.0"
+apscheduler = "^3.9.1.post1"
+requests = "^2.28.2"
+orjson = "^3.8.6"
+alembic = "^1.10.2"
+psycopg = {extras = ["binary", "pool"], version = "^3.1.8"}
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.31.0"
+pycodestyle = "^2.8.0"
+isort = "^5.10.1"
+pytest = "^7.2.0"
+pytest-mock = "^3.10.0"
+autoflake = "^2.0.0"
+pylint = "^2.15.9"
+pytest-asyncio = "^0.20.3"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = false
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+addopts = "-rsxX -l --tb=short"
+xfail_strict = true

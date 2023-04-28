@@ -1,0 +1,61 @@
+# EXAMPLE configuration file.
+# You need to rename it to "config.toml"
+
+[telegram]
+prod = false
+skip_updates = false
+token = ""
+beta_token = "444:TEST"
+
+[bot]
+admins = [944176367]
+throttling = 0.5
+
+[core]
+supported_modules = ["filters", "middlewares", "modules"]
+
+# some fucking integrations and memes
+[features]
+use_webhook = false
+use_custom_server = true
+use_database = false
+use_uvloop = false
+use_sentry = false
+use_redis_fsm = true
+use_modern_callback = false
+use_file_logs = false
+use_apscheduler = false
+
+[features.custom_server]
+server = 'https://api.telegram.org/'
+
+[features.webhook]
+host = "https://bot_template.neonteam.cc"
+path = "/bot/webhook"
+webapp_host = "0.0.0.0"
+webapp_port = 3939
+
+# redis configuration for FSM (works only if use_redis_fsm feature enabled)
+[features.redis]
+addr = "localhost"
+port = 6379
+pass = "password"
+prefix = "bot_template"
+
+# database configuration (works only if use_database feature enabled)
+[features.database]
+driver = "postgresql+asyncpg"
+username = ""
+password = ""
+addr = "localhost"
+port = 5432
+database_name = ""
+
+# sentry configuration (works only if use_sentry feature enabled)
+[features.sentry]
+public_key = ""
+traces_sample_rate = 1.0
+
+# apscheduler configuration (works only if use_apscheduler feature enabled)
+[features.apscheduler]
+timezone = "Europe/Moscow"

@@ -1,0 +1,12 @@
+[MASTER]
+extension-pkg-whitelist=ujson
+disable=
+    C0114,
+    C0115,
+    C0116,
+    R0903,
+    C0301,
+    C0413,
+    C0411,
+    W0613,
+    W0221,
